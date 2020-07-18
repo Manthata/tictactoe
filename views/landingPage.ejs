@@ -1,0 +1,57 @@
+<%- include("partials/header")-%>
+
+
+<div class= "contents">
+    <form action="/" method="post">
+        <div class="players">
+            <div class="playerA">
+                <p id="one">player1：
+                    <input type="text" name="player1"></p>
+            </div>
+            <div class="playerB">
+                <p id="two">player2：
+                    <input type="text" name="player2"></p>
+            </div>
+        </div>
+        <div class="select">
+            <p>マス目の数</p>
+            <select name="squares">
+                <option value="threeQ">3×3</option>
+                <option value="fiveQ">5×5</option>
+            </select>
+        
+        </div>
+        <div class="submit">
+            <form action="/">
+                <input type="submit" value="PLAY" style="color:#ffa500;font-size:18pt;border-width:2px">
+        </div>
+    </form>
+</div>
+<!-- 
+    <div class="players">
+        <div class="playerA">
+            <p id="one">player1：
+                <input type="text" name="player1"></p>
+        </div>
+        <div class="playerB">
+            <p id="two">player2：
+                <input type="text" name="player2"></p>
+        </div>
+    </div>
+
+    <div class="select">
+        <p>マス目の数</p>
+        <select name="squares">
+            <option value="threeQ">3×3</option>
+            <option value="fiveQ">5×5</option>
+        </select>
+
+    </div>
+</div><br>
+
+<div class="submit">
+    <form action="/" >
+        <input type="submit" value="PLAY" style="color:#ffa500;font-size:18pt;border-width:2px">
+</div> -->
+
+<%- include("partials/footer") -%>

@@ -1,0 +1,38 @@
+*{
+  font-family: "HenziPen TC";
+}
+
+h1{
+  color: #008080;
+  text-align: center;
+  font-size: 30px;
+  text-decoration: underline;
+}
+p{
+  color: #708090;
+  font-weight: lighter;
+  font-size: 24px:
+}
+
+.players{
+  text-align: center;
+}
+
+.playerA{
+  display: inline-block;
+}
+.playerB{
+  display: inline-block;
+}
+
+.select{
+  text-align: center;
+}
+
+.submit{
+  text-align: center;
+}
+
+.image{
+  text-align: center;
+}

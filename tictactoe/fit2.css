@@ -1,0 +1,151 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+body {
+  margin: 0;
+  line-height: normal;
+}
+h1 {
+  margin: 20px 0;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.wrapper {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 10px;
+  text-align: center;
+}
+.game-container {
+  padding: 60px 0;
+}
+.message-container {
+  margin-bottom: 20px;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+.batsu {
+  color: #00b0f0;
+}
+.maru {
+  color: #ff0000;
+}
+.js-hidden {
+  display: none;
+}
+.squares-container {
+  margin: 0 auto;
+  width: 202px;
+}
+.squares-box {
+  /* width: 202px;
+  height: 330px; */
+  /* display: flex;
+  flex-wrap: wrap; */
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  border: solid 2px #333;
+  text-align: center;
+}
+.square {
+  position: relative;
+  width: calc(200px / 5);
+  height: calc(200px / 5);
+  border: solid 2px #333;
+}
+.js-maru-checked::before {
+  content: '';
+  width: 30px;
+  height: 30px;
+  border: solid 8px #ff0000;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.js-batsu-checked::before {
+  content: '';
+  width: 40px;
+  height: 8px;
+  margin: auto;
+  background-color: #00b0f0;
+  border-radius: 4px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.js-batsu-checked::after {
+  content: '';
+  width: 8px;
+  height: 40px;
+  margin: auto;
+  background-color: #00b0f0;
+  border-radius: 4px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.btn-container {
+  padding-top: 40px;
+}
+.btn {
+  display: inline-block;
+  width: 150px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.btn-reset {
+  color: #fff;
+  background-color: #ffc000;
+  font-weight: bold;
+}
+.btn-reset:hover {
+  background-color: #ffd347;
+  transition-duration: 0.4s;
+}
+
+/* JS連動 */
+.js-unclickable {
+  pointer-events: none;
+}
+.js-highLight {
+  background-color: #fff2cc;
+}
+
+#stopwatch-box {
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 3em;
+  letter-spacing: 5px;
+  text-align: center;
+}
+
+#controls {
+  text-align: center;
+}
+
+button {
+  background: deepskyblue;
+  border: 2px solid deepskyblue;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 20px;
+}
+
+.btn-xlarge {
+  width: 50px;
+  height: 20px;
+  font-size: 10px;
+}
